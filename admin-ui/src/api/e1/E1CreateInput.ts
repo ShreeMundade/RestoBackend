@@ -1,1 +1,3 @@
-export type E1CreateInput = {};
+export type E1CreateInput = {
+  location?: string | null;
+};

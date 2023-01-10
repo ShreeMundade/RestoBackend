@@ -289,6 +289,50 @@ import { E70List } from "./e70/E70List";
 import { E70Create } from "./e70/E70Create";
 import { E70Edit } from "./e70/E70Edit";
 import { E70Show } from "./e70/E70Show";
+import { DineOrderList } from "./dineOrder/DineOrderList";
+import { DineOrderCreate } from "./dineOrder/DineOrderCreate";
+import { DineOrderEdit } from "./dineOrder/DineOrderEdit";
+import { DineOrderShow } from "./dineOrder/DineOrderShow";
+import { ItemList } from "./item/ItemList";
+import { ItemCreate } from "./item/ItemCreate";
+import { ItemEdit } from "./item/ItemEdit";
+import { ItemShow } from "./item/ItemShow";
+import { TableList } from "./table/TableList";
+import { TableCreate } from "./table/TableCreate";
+import { TableEdit } from "./table/TableEdit";
+import { TableShow } from "./table/TableShow";
+import { CustomerList } from "./customer/CustomerList";
+import { CustomerCreate } from "./customer/CustomerCreate";
+import { CustomerEdit } from "./customer/CustomerEdit";
+import { CustomerShow } from "./customer/CustomerShow";
+import { FeedbackList } from "./feedback/FeedbackList";
+import { FeedbackCreate } from "./feedback/FeedbackCreate";
+import { FeedbackEdit } from "./feedback/FeedbackEdit";
+import { FeedbackShow } from "./feedback/FeedbackShow";
+import { StaffList } from "./staff/StaffList";
+import { StaffCreate } from "./staff/StaffCreate";
+import { StaffEdit } from "./staff/StaffEdit";
+import { StaffShow } from "./staff/StaffShow";
+import { ParcelList } from "./parcel/ParcelList";
+import { ParcelCreate } from "./parcel/ParcelCreate";
+import { ParcelEdit } from "./parcel/ParcelEdit";
+import { ParcelShow } from "./parcel/ParcelShow";
+import { KitchenList } from "./kitchen/KitchenList";
+import { KitchenCreate } from "./kitchen/KitchenCreate";
+import { KitchenEdit } from "./kitchen/KitchenEdit";
+import { KitchenShow } from "./kitchen/KitchenShow";
+import { AdminOwnerList } from "./adminOwner/AdminOwnerList";
+import { AdminOwnerCreate } from "./adminOwner/AdminOwnerCreate";
+import { AdminOwnerEdit } from "./adminOwner/AdminOwnerEdit";
+import { AdminOwnerShow } from "./adminOwner/AdminOwnerShow";
+import { BillList } from "./bill/BillList";
+import { BillCreate } from "./bill/BillCreate";
+import { BillEdit } from "./bill/BillEdit";
+import { BillShow } from "./bill/BillShow";
+import { PaymentList } from "./payment/PaymentList";
+import { PaymentCreate } from "./payment/PaymentCreate";
+import { PaymentEdit } from "./payment/PaymentEdit";
+import { PaymentShow } from "./payment/PaymentShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -811,6 +855,83 @@ const App = (): React.ReactElement => {
           edit={E70Edit}
           create={E70Create}
           show={E70Show}
+        />
+        <Resource
+          name="DineOrder"
+          list={DineOrderList}
+          edit={DineOrderEdit}
+          create={DineOrderCreate}
+          show={DineOrderShow}
+        />
+        <Resource
+          name="Item"
+          list={ItemList}
+          edit={ItemEdit}
+          create={ItemCreate}
+          show={ItemShow}
+        />
+        <Resource
+          name="Table"
+          list={TableList}
+          edit={TableEdit}
+          create={TableCreate}
+          show={TableShow}
+        />
+        <Resource
+          name="Customer"
+          list={CustomerList}
+          edit={CustomerEdit}
+          create={CustomerCreate}
+          show={CustomerShow}
+        />
+        <Resource
+          name="Feedback"
+          list={FeedbackList}
+          edit={FeedbackEdit}
+          create={FeedbackCreate}
+          show={FeedbackShow}
+        />
+        <Resource
+          name="Staff"
+          list={StaffList}
+          edit={StaffEdit}
+          create={StaffCreate}
+          show={StaffShow}
+        />
+        <Resource
+          name="Parcel"
+          list={ParcelList}
+          edit={ParcelEdit}
+          create={ParcelCreate}
+          show={ParcelShow}
+        />
+        <Resource
+          name="Kitchen"
+          list={KitchenList}
+          edit={KitchenEdit}
+          create={KitchenCreate}
+          show={KitchenShow}
+        />
+        <Resource
+          name="AdminOwner"
+          list={AdminOwnerList}
+          edit={AdminOwnerEdit}
+          create={AdminOwnerCreate}
+          show={AdminOwnerShow}
+        />
+        <Resource
+          name="Bill"
+          list={BillList}
+          edit={BillEdit}
+          create={BillCreate}
+          show={BillShow}
+        />
+        <Resource
+          name="Payment"
+          list={PaymentList}
+          edit={PaymentEdit}
+          create={PaymentCreate}
+          show={PaymentShow}
         />
       </Admin>
     </div>
